@@ -47,11 +47,6 @@ const Register = () => {
                     name="country" onChange={handleChanges}/>
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="status" className='block text-gray-700'>Status</label>
-                    <input type="text" placeholder='Enter Status' className='w-full px-3 py-2 border'
-                    name="status" onChange={handleChanges}/>
-                </div>
-                <div className="mb-4">
                     <label htmlFor="password" className='block text-gray-700'>Password</label>
                     <input type="password" placeholder='Enter Password' className='w-full px-3 py-2 border'
                     name="password" onChange={handleChanges}/>
