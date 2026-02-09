@@ -6,7 +6,9 @@ const Register = () => {
     const [values, setValues] = useState({
         username: '',
         email: '',
-        password: ''
+        password: '',
+        country: '',
+        status: ''
     })
     const navigate = useNavigate()
 
@@ -38,6 +40,16 @@ const Register = () => {
                     <label htmlFor="email" className='block text-gray-700'>Email</label>
                     <input type="email" placeholder='Enter Email' className='w-full px-3 py-2 border'
                     name="email" onChange={handleChanges}/>
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="country" className='block text-gray-700'>Country</label>
+                    <input type="text" placeholder='Enter Country' className='w-full px-3 py-2 border'
+                    name="country" onChange={handleChanges}/>
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="status" className='block text-gray-700'>Status</label>
+                    <input type="text" placeholder='Enter Status' className='w-full px-3 py-2 border'
+                    name="status" onChange={handleChanges}/>
                 </div>
                 <div className="mb-4">
                     <label htmlFor="password" className='block text-gray-700'>Password</label>
